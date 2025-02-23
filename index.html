@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Anastasia Kumeda - Web Developer</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Kumeda</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a
+                href="#home"
+                class="nav__link active-link"
+                data-en="Home"
+                data-uk="Головна сторінка"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a href="#work" class="nav__link" data-en="Work" data-uk="Проекти"
+                >Work</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#info"
+                class="nav__link"
+                data-en="My info"
+                data-uk="Інформація"
+                >My info</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                class="nav__link"
+                data-en="Services"
+                data-uk="Послуги"
+                >Services</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                class="nav__link"
+                data-en="Contact Me"
+                data-uk="Мої контакти"
+                >Contact Me</a
+              >
+            </li>
+
+            <li>
+              <button class="button-en" onclick="setLanguage('en')">
+                <span class="button-content">EN</span>
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="button-uk"
+                data-uk="Українська"
+                onclick="setLanguage('uk')"
+              >
+                <span class="button-content">UA</span>
+              </button>
+            </li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img
+            src="assets/img/main-img-removebg-preview.webp"
+            alt="image"
+            class="home__img"
+            width="350"
+            height="350"
+          />
+
+          <div class="home__data">
+            <h1
+              class="home__name"
+              data-en="Anastasiia Kumeda"
+              data-uk="Анастасія Кумеда"
+            >
+              Anastasiia <br />
+              Kumeda
+            </h1>
+            <h3
+              class="home__profession"
+              data-en="Web Developer"
+              data-uk="Веб-розробник"
+            >
+              Web Developer
+            </h3>
+          </div>
+
+          <a href="#work" class="home__scroll">
+            <div class="home__scroll-box">
+              <i class="ri-arrow-down-line"></i>
+            </div>
+
+            <span
+              class="home__scroll-text"
+              data-en="Recent Works"
+              data-uk="Мої Роботи"
+              >Recent Works</span
+            >
+          </a>
+        </div>
+      </section>
+
+      <!--==================== WORKS ====================-->
+      <section class="work section" id="work">
+        <h2 class="section__title" data-en="Recent Works" data-uk="Мої Роботи">
+          RECENT WORKS
+        </h2>
+
+        <div class="work__container container grid">
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/moodflix/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">MoodFlix</h2>
+              <p class="work__description">
+                MoodFlix - built with React and styled using Tailwind CSS.
+              </p>
+
+              <img
+                src="assets/img/moodflix-1.webp"
+                alt="image"
+                width="444"
+                height="240"
+                class="work__img"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/brainwave/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">BrainWave</h2>
+              <p class="work__description">
+                BrainWave - built with React and styled using Tailwind CSS.
+              </p>
+
+              <img
+                src="assets/img/brainwave.webp"
+                alt="image"
+                class="work__img"
+                width="444"
+                height="240"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/burger-website"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">Burger Website</h2>
+              <p class="work__description">
+                Burger Website - HTML/CSS/JavaScript project with scroll reveal
+                animation
+              </p>
+
+              <img
+                src="assets/img/burger-website.webp"
+                alt="image"
+                class="work__img"
+                width="444"
+                height="240"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/skater-animation/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">Skater</h2>
+              <p class="work__description">
+                Skater - HTML/CSS/JS project with animation.
+              </p>
+
+              <img
+                src="assets/img/skater.webp"
+                width="444"
+                height="240"
+                alt="image"
+                class="work__img"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/headphones-website/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">Headphones Website</h2>
+              <p class="work__description">
+                Headphones website - HTML/CSS/JavaScript with slider and scroll
+                reveal animation
+              </p>
+
+              <img
+                src="assets/img/head-site.webp"
+                alt="image"
+                class="work__img"
+                width="444"
+                height="240"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/bakery-website/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">Bakery Website</h2>
+              <p class="work__description">
+                Bakery Website - HTML/CSS/JavaScript, dynamic website with
+                scroll reveal animation
+              </p>
+
+              <img
+                src="assets/img/bakery-website.webp"
+                alt="image"
+                class="work__img"
+                width="444"
+                height="240"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a
+              href="https://curly-coder.github.io/travel-website/"
+              target="_blank"
+              class="work__link"
+            >
+              <h2 class="work__title">Travel Website</h2>
+              <p class="work__description">
+                Restaurant website - HTML/CSS/JavaScript with Scroll Reveal
+                animation
+              </p>
+
+              <img
+                src="assets/img/travel-website.webp"
+                alt="image"
+                class="work__img"
+                width="444"
+                height="240"
+              />
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== INFO ====================-->
+      <section class="info section" id="info">
+        <h2 class="section__title" data-en="MY INFO" data-uk="МОЯ ІНФОРМАЦІЯ">
+          MY INFO
+        </h2>
+
+        <div class="info__container container grid">
+          <!-- About -->
+          <div class="about grid">
+            <div class="about__content">
+              <h3 data-en="About Me" data-uk="Про мене" class="info__title">
+                About Me
+              </h3>
+              <p
+                class="about__description"
+                data-en="Passionate about creating websites with beautiful interfaces. I have years of experience in Web Development with several projects completed."
+                data-uk="Захоплююся створенням веб-сайтів з красивими інтерфейсами. Можливо, у мене немає професійного досвіду, але я реалізувала кілька особистих проектів у сфері веб-розробки."
+              >
+                Passionate about creating
+                <b>websites with beautiful interfaces</b>. I may not have
+                professional experience, but I have completed several personal
+                projects in <b>Web Development.</b>
+              </p>
+
+              <a
+                href="assets/pdf/Frontend Kumeda Anastasiia.pdf"
+                download=""
+                target="_blank"
+                class="button about__button"
+                data-en="Download CV"
+                data-uk="Завантажити CV"
+                >Download CV</a
+              >
+            </div>
+            <img
+              src="assets/img/skill-img-removebg-preview.webp"
+              alt="image"
+              class="about__img"
+              width="320"
+              height="320"
+            />
+          </div>
+
+          <!--Skills-->
+          <div class="skills">
+            <h3 class="info__title">Skills</h3>
+
+            <div class="skills__content grid">
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-html.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="41"
+                />
+                <span class="skills__name">HTML</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-css.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="41"
+                />
+                <span class="skills__name">CSS</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-javascript.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="35"
+                />
+                <span class="skills__name">JavaScript</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/Gulp-3.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="78"
+                />
+                <span class="skills__name">Gulp</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-react.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="40"
+                />
+                <span class="skills__name">React</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-git.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="35"
+                />
+                <span class="skills__name">Git</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-github.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="35"
+                />
+                <span class="skills__name">GitHub</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-tailwind-css.webp"
+                  alt="image"
+                  width="35"
+                  height="22"
+                  class="skills__img"
+                />
+                <span class="skills__name">Tailwind CSS</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-sass.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="27"
+                />
+                <span class="skills__name">Sass</span>
+              </div>
+
+              <div class="skills__box">
+                <img
+                  src="assets/img/info-figma.webp"
+                  alt="image"
+                  class="skills__img"
+                  width="35"
+                  height="53"
+                />
+                <span class="skills__name">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title" data-en="Services" data-uk="Послуги">
+          SERVICES
+        </h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-code-box-line services__icon"></i>
+            <h3
+              class="services__title"
+              data-en="Web Development"
+              data-uk="Розробка вебсайтів"
+            >
+              Web Development
+            </h3>
+            <p
+              class="services__description"
+              data-en="I specialize in offering customized web development solutions tailored to your specific needs. From responsive design and interactive frontend development and seamless e-commerce integration."
+              data-uk="Я спеціалізуюсь на наданні індивідуальних рішень для розробки вебсайтів, що відповідають вашим конкретним потребам. Від адаптивного дизайну та інтерактивної розробки фронтенду та безперебійної інтеграції електронної комерції."
+            >
+              I specialize in offering customized web development solutions
+              tailored to your specific needs. From responsive design and
+              interactive frontend development and seamless e-commerce
+              integration
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-code-box-line services__icon"></i>
+            <h3
+              class="services__title"
+              data-en="Cross-Browser Compatibility"
+              data-uk="Сумісність з різними браузерами"
+            >
+              Cross-Browser Compatibility
+            </h3>
+            <p
+              class="services__description"
+              data-en="I specialize in ensuring websites function smoothly across major browsers like Chrome, Firefox, Safari, Edge, and others. I rigorously test and optimize to address browser-specific quirks, ensuring consistent style rendering and functional performance across all platforms. My focus is on delivering a seamless user experience, regardless of the browser or device used."
+              data-uk="Я спеціалізуюсь на забезпеченні безперебійної роботи вебсайтів у основних браузерах, таких як Chrome, Firefox, Safari, Edge та інших. Я ретельно тестую та оптимізую, щоб усунути специфічні для браузерів недоліки, забезпечуючи послідовне відображення стилів та функціональну продуктивність на всіх платформах. Моя мета - забезпечити безперебійний користувацький досвід незалежно від браузера чи пристрою, що використовується."
+            >
+              I specialize in ensuring websites function smoothly across major
+              browsers like Chrome, Firefox, Safari, Edge, and others. I
+              rigorously test and optimize to address browser-specific quirks,
+              ensuring consistent style rendering and functional performance
+              across all platforms. My focus is on delivering a seamless user
+              experience, regardless of the browser or device used.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-code-box-line services__icon"></i>
+            <h3
+              class="services__title"
+              data-en="Performance Optimization"
+              data-uk="Оптимізація продуктивності"
+            >
+              Perfomance Optimization
+            </h3>
+            <p
+              class="services__description"
+              data-en="Website speed is crucial for user engagement and SEO. I optimize performance by using lazy loading for offscreen images and scripts, reducing initial load times and ensuring a fast and smooth user experience."
+              data-uk="Швидкість вебсайту є важливою для залучення користувачів та SEO. Я оптимізую продуктивність, використовуючи 'ліниве завантаження' для зображень та скриптів поза екраном, зменшуючи початковий час завантаження та забезпечуючи швидкий та плавний користувацький досвід."
+            >
+              Website speed is crucial for user engagement and SEO. I optimize
+              performance by using lazy loading for offscreen images and
+              scripts, reducing initial load times.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-code-box-line services__icon"></i>
+            <h3
+              class="services__title"
+              data-en="SEO Optimization"
+              data-uk="SEO Оптимізація"
+            >
+              SEO Optimization
+            </h3>
+            <p
+              class="services__description"
+              data-en="Optimizing on-page SEO is key for better search rankings and organic traffic. I use semantic HTML, optimized meta tags, and clean URLs. I ensure proper header tags, keyword placement, and image alt attributes. I also focus on site structure, internal linking, and mobile optimization to boost visibility and user engagement."
+              data-uk="Оптимізація пошукової оптимізації на сторінці є ключовою для кращого рейтингу в пошуку та органічного трафіку. Я використовую семантичний HTML, оптимізовані мета-теги та чисті URL-адреси. Я забезпечую належні теги заголовків, розміщення ключових слів і атрибути alt зображення. Я також зосереджуюсь на структурі сайту, внутрішніх посиланнях і мобільній оптимізації для підвищення видимості та залучення користувачів."
+            >
+              Optimizing on-page SEO is key for better search rankings and
+              organic traffic. I use semantic HTML, optimized meta tags, and
+              clean URLs. I ensure proper header tags, keyword placement, and
+              image alt attributes. I also focus on site structure, internal
+              linking, and mobile optimization to boost visibility and user
+              engagement.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2
+          class="section__title"
+          data-en="Contact Me"
+          data-uk="Зв'язатися зі мною"
+        >
+          Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+          <form action="" class="contact__from grid" id="contact-form">
+            <div class="contact__group grid">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Names"
+                required
+                class="contact__input"
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                required
+                class="contact__input"
+                id="user_email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Please enter a valid email address (e.g., example@mail.com)"
+              />
+            </div>
+
+            <textarea
+              name="user_message"
+              placeholder="Message"
+              required
+              class="contact__input contact__area"
+            ></textarea>
+
+            <button
+              class="button contact__button"
+              data-uk="Відправити Повідомлення"
+              data-en="Send Message"
+              type="submit"
+            >
+              Send Message
+            </button>
+
+            <p class="contact__message" id="contact-message"></p>
+          </form>
+
+          <div class="contact__social grid">
+            <a
+              href="https://t.me/anastasia_kumeda"
+              target="_blank"
+              class="contact__social-link"
+            >
+              <i class="ri-telegram-fill"></i>
+              <span>Telegram</span>
+            </a>
+
+            <!-- <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                  <i class="ri-facebook-circle-line"></i>
+                  <span>Facebook</span>
+               </a> -->
+
+            <a
+              href="https://www.linkedin.com/in/anastasiia-kumeda-542482164/"
+              target="_blank"
+              class="contact__social-link"
+            >
+              <i class="ri-linkedin-box-line"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a
+              href="#home"
+              class="footer__link"
+              data-en="Home"
+              data-uk="Головна сторінка"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#work"
+              class="footer__link"
+              data-en="Work"
+              data-uk="Проекти"
+              >Work</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#info"
+              class="footer__link"
+              data-en="Info"
+              data-uk="Інформація"
+              >Info</a
+            >
+          </li>
+        </ul>
+
+        <span class="footer__copy"> &#169; All Rights Reserved </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
